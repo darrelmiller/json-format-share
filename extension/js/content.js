@@ -81,7 +81,7 @@
 
             jfStyleEl.insertAdjacentHTML(
               'beforeend',
-              'body{-webkit-user-select:text;overflow-y:scroll !important;margin:0;position:relative}#optionBar{-webkit-user-select:none;display:block;position:absolute;top:9px;right:17px}#buttonFormatted,#buttonPlain{-webkit-border-radius:2px;-webkit-box-shadow:0px 1px 3px rgba(0,0,0,0.1);-webkit-user-select:none;background:-webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);border:1px solid #aaa;color:#444;font-size:12px;margin-bottom:0px;min-width:4em;padding:3px 0;position:relative;z-index:10;display:inline-block;width:80px;text-shadow:1px 1px rgba(255,255,255,0.3)}#buttonFormatted{margin-left:0;border-top-left-radius:0;border-bottom-left-radius:0}#buttonPlain{margin-right:0;border-top-right-radius:0;border-bottom-right-radius:0;border-right:none}#buttonFormatted:hover,#buttonPlain:hover{-webkit-box-shadow:0px 1px 3px rgba(0,0,0,0.2);background:#ebebeb -webkit-linear-gradient(#fefefe, #f8f8f8 40%, #e9e9e9);border-color:#999;color:#222}#buttonFormatted:active,#buttonPlain:active{-webkit-box-shadow:inset 0px 1px 3px rgba(0,0,0,0.2);background:#ebebeb -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc);color:#333}#buttonFormatted.selected,#buttonPlain.selected{-webkit-box-shadow:inset 0px 1px 5px rgba(0,0,0,0.2);background:#ebebeb -webkit-linear-gradient(#e4e4e4, #dfdfdf 40%, #dcdcdc);color:#333}#buttonFormatted:focus,#buttonPlain:focus{outline:0}#jsonpOpener,#jsonpCloser{padding:4px 0 0 8px;color:#000;margin-bottom:-6px}#jsonpCloser{margin-top:0}#formattedJson{padding-left:28px;padding-top:6px}pre{padding:36px 5px 5px 5px}.kvov{display:block;padding-left:20px;margin-left:-20px;position:relative}.collapsed{white-space:nowrap}.collapsed>.blockInner{display:none}.collapsed>.ell:after{content:"…";font-weight:bold}.collapsed>.ell{margin:0 4px;color:#888}.collapsed .kvov{display:inline}.e{width:20px;height:18px;display:block;position:absolute;left:-2px;top:1px;z-index:5;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD1JREFUeNpiYGBgOADE%2F3Hgw0DM4IRHgSsDFOzFInmMAQnY49ONzZRjDFiADT7dMLALiE8y4AGW6LoBAgwAuIkf%2F%2FB7O9sAAAAASUVORK5CYII%3D");background-repeat:no-repeat;background-position:center center;display:block;opacity:0.15}.collapsed>.e{-webkit-transform:rotate(-90deg);width:18px;height:20px;left:0px;top:0px}.e:hover{opacity:0.35}.e:active{opacity:0.5}.collapsed .kvov .e{display:none}.blockInner{display:block;padding-left:24px;border-left:1px dotted #bbb;margin-left:2px}#formattedJson,#jsonpOpener,#jsonpCloser{color:#333;font:13px/18px monospace}#formattedJson{color:#444}.b{font-weight:bold}.s{color:#0B7500;word-wrap:break-word}a:link,a:visited{text-decoration:none;color:inherit}a:hover,a:active{text-decoration:underline;color:#050}.bl,.nl,.n{font-weight:bold;color:#1A01CC}.k{color:#000}#formattingMsg{font:13px "Lucida Grande","Segoe UI","Tahoma";padding:10px 0 0 8px;margin:0;color:#333}#formattingMsg>svg{margin:0 7px;position:relative;top:1px}[hidden]{display:none !important}span{white-space:pre-wrap}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}#spinner{-webkit-animation:spin 2s 0 infinite}*{-webkit-font-smoothing:antialiased}'
+              'body{-webkit-user-select:text;overflow-y:scroll!important;margin:0;position:relative}#optionBar{-webkit-user-select:none;display:block;position:absolute;top:9px;right:17px}#buttonFormatted,#buttonPlain,#buttonShare{-webkit-border-radius:2px;-webkit-box-shadow:0 1px 3px rgba(0,0,0,.1);-webkit-user-select:none;background:-webkit-linear-gradient(#fafafa,#f4f4f4 40%,#e5e5e5);border:1px solid #aaa;color:#444;font-size:12px;margin-bottom:0;min-width:4em;padding:3px 0;position:relative;z-index:10;display:inline-block;width:80px;text-shadow:1px 1px rgba(255,255,255,.3)}#buttonFormatted{margin-left:0;border-top-left-radius:0;border-bottom-left-radius:0}#buttonPlain,#buttonShare{margin-right:0;border-top-right-radius:0;border-bottom-right-radius:0}#buttonFormatted:hover,#buttonPlain:hover,#buttonShare:hover{-webkit-box-shadow:0 1px 3px rgba(0,0,0,.2);background:-webkit-linear-gradient(#fefefe,#f8f8f8 40%,#e9e9e9) #ebebeb;border-color:#999;color:#222}#buttonFormatted:active,#buttonPlain:active,#buttonShare:active{-webkit-box-shadow:inset 0 1px 3px rgba(0,0,0,.2);background:-webkit-linear-gradient(#f4f4f4,#efefef 40%,#dcdcdc) #ebebeb;color:#333}#buttonFormatted.selected,#buttonPlain.selected{-webkit-box-shadow:inset 0 1px 5px rgba(0,0,0,.2);background:-webkit-linear-gradient(#e4e4e4,#dfdfdf 40%,#dcdcdc) #ebebeb;color:#333}#buttonFormatted:focus,#buttonPlain:focus{outline:0}#jsonpCloser,#jsonpOpener{padding:4px 0 0 8px;margin-bottom:-6px}#jsonpCloser{margin-top:0}#formattedJson{padding-left:28px;padding-top:6px}pre{padding:36px 5px 5px}.kvov{display:block;padding-left:20px;margin-left:-20px;position:relative}.collapsed{white-space:nowrap}.collapsed>.blockInner{display:none}.collapsed>.ell:after{content:"…";font-weight:700}.collapsed>.ell{margin:0 4px;color:#888}.collapsed .kvov{display:inline}.e{width:20px;height:18px;position:absolute;left:-2px;top:1px;z-index:5;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD1JREFUeNpiYGBgOADE%2F3Hgw0DM4IRHgSsDFOzFInmMAQnY49ONzZRjDFiADT7dMLALiE8y4AGW6LoBAgwAuIkf%2F%2FB7O9sAAAAASUVORK5CYII%3D);background-repeat:no-repeat;background-position:center center;display:block;opacity:.15}.collapsed>.e{-webkit-transform:rotate(-90deg);width:18px;height:20px;left:0;top:0}.e:hover{opacity:.35}.e:active{opacity:.5}.collapsed .kvov .e{display:none}.blockInner{display:block;padding-left:24px;border-left:1px dotted #bbb;margin-left:2px}#formattedJson,#jsonpCloser,#jsonpOpener{color:#333;font:13px/18px monospace}#formattedJson{color:#444}.b{font-weight:700}.s{color:#0B7500;word-wrap:break-word}a:link,a:visited{text-decoration:none;color:inherit}a:active,a:hover{text-decoration:underline;color:#050}.bl,.n,.nl{font-weight:700;color:#1A01CC}.k{color:#000}#formattingMsg{font:13px "Lucida Grande","Segoe UI",Tahoma;padding:10px 0 0 8px;margin:0;color:#333}#formattingMsg>svg{margin:0 7px;position:relative;top:1px}[hidden]{display:none!important}span{white-space:pre-wrap}@-webkit-keyframes spin{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}#spinner{-webkit-animation:spin 2s 0 infinite}*{-webkit-font-smoothing:antialiased}'
             ) ;
   
             // Add custom font name if set - FROM FUTURE
@@ -123,12 +123,15 @@
           
           // Create toggleFormat button
             var buttonPlain = document.createElement('button'),
-              buttonFormatted = document.createElement('button') ;
+              buttonFormatted = document.createElement('button'),
+              buttonShare = document.createElement('button');
             buttonPlain.id = 'buttonPlain' ;
             buttonPlain.innerText = 'Raw' ;
             buttonFormatted.id = 'buttonFormatted' ;
             buttonFormatted.innerText = 'Parsed' ;
             buttonFormatted.classList.add('selected') ;
+            buttonShare.id = 'buttonShare' ;
+            buttonShare.innerText = 'Share' ;
             
             var plainOn = false ;
             buttonPlain.addEventListener(
@@ -162,12 +165,57 @@
               },
               false
             ) ;
+
+            buttonShare.addEventListener(
+      	      'click',
+      	      function () {
+                      // When share button clicked...
+            		var data = {
+            		  "request": {
+            		    "method": "GET",
+            		    "url": window.location.href,
+                                "headers": {
+                                   "Host": [ window.location.host ],
+                                   "User-Agent": [ navigator.userAgent ]
+                                }
+            		  },
+            		  "response": {
+            		    "status": 200,
+            		    "body": pre.innerText,
+                                "headers": {
+                                  "Content-Type": "application/json"
+                                }
+            		  }
+                };
+      
+                var xhr = new XMLHttpRequest();
+                //xhr.open('POST', 'https://api-runscope-com-mizji4oz52ck.runscope.net/buckets/mizji4oz52ck/messages', false);
+                xhr.open('POST', 'https://api.runscope.com/buckets/mizji4oz52ck/messages', false);
+                xhr.setRequestHeader('Content-Type', 'application/json');
+                xhr.setRequestHeader('Authorization', 'Bearer 8417bd5a-cff6-4eef-b2fe-a360f90e2f41');
+                xhr.send(JSON.stringify(data));
+                var jsonResponse = JSON.parse(xhr.responseText);
+                var messageUuid = jsonResponse.data[0].uuid;
+        
+                // xhr.open('PUT', 'https://api-runscope-com-mizji4oz52ck.runscope.net/buckets/mizji4oz52ck/shared/' + messageUuid, false);
+                xhr.open('PUT', 'https://api.runscope.com/buckets/mizji4oz52ck/shared/' + messageUuid, false);
+                xhr.setRequestHeader('Authorization', 'Bearer 8417bd5a-cff6-4eef-b2fe-a360f90e2f41');
+                xhr.send();
+                jsonResponse = JSON.parse(xhr.responseText);
+                var publicUrl = jsonResponse.data.public_url;
+                var win = window.open(publicUrl, '_blank');
+                win.focus();
+      	      },
+      	      false
+      	    ) ;
+
             
             // Put it in optionBar
-              optionBar.appendChild(buttonPlain) ;
-              optionBar.appendChild(buttonFormatted) ;
+            optionBar.appendChild(buttonPlain) ;
+            optionBar.appendChild(buttonFormatted) ;
+            optionBar.appendChild(buttonShare) ;
 
-          // Attach event handlers
+            // Attach event handlers
             document.addEventListener(
               'click',
               generalClick,
@@ -392,5 +440,6 @@
       }
     }
   }
+
 
 })();

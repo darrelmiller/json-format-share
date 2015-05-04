@@ -1,19 +1,21 @@
 {
-  "name": "JSON Formatter",
-  "version": "0.6.0",
+  "name": "JSON Format & Share",
+  "version": "0.1.0",
   "manifest_version": 2,
-  "description": "Makes JSON easy to read. Open source.",
-  "homepage_url": "https://github.com/callumlocke/json-formatter",
+  "description": "An extension for automatic JSON formatting and one-click request sharing. Sharing allows you to share the HTTP request and JSON response details with anyone in the world.",
+  "homepage_url": "https://github.com/mansilladev/json-formatter",
   "minimum_chrome_version": "21",
   "icons": {
-       "128": "icons/128.png",
-       "32": "icons/32.png"
+       "128": "icons/runscope-128.png",
+       "32": "icons/runscope-32.png"
   },
+  "key": "gfcogkjlgggffamjnhelohodkdmaocbf",
   "background": {
     "scripts": ["js/background.js"]
   },
   "content_scripts": [
     { "matches": ["<all_urls>"], "js": ["js/content.js"], "run_at": "document_start" }
   ],
-  "permissions":["*://*/*", "<all_urls>"]
+  "permissions":["tabs", "*://*/*", "<all_urls>", "https://api.runscope.com/*"]
 }
+
