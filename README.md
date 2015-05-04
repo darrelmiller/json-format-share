@@ -1,7 +1,8 @@
-JSON Formatter
-==============
+JSON Format & Share
+===================
 
-Chrome extension for printing JSON and JSONP nicely when you visit it 'directly' in a browser tab.
+Chrome extension for formatting/pretty-printing and sharing JSON documents in the browser. The one-click share allows you to 
+Forked from https://github.com/callumlocke/json-formatter
 
 Features
 --------
@@ -14,15 +15,14 @@ Features
 * Clickable URLs
 * Buttons for switching between raw and parsed JSON
 * Parsed JSON is exported as a global variable, `json`, so you can inspect it in the console
+* One-click share for collaboration, with HTTP request and response details, powered by [Runscope](https://www.runscope.com/docs/sharing)
 
 A background worker is used to prevent the UI freezing when processing very long JSON pages.
 
 Installation
 ------------
 
-**Option 1** – just install it from the [Chrome Web Store](https://chrome.google.com/webstore/detail/bcjindcccaagfpapjjmafapmmgkkhgoa).
-
-**Option 2** – install it from source:
+**Option 1** – install it from source:
 
 * clone/download this repo,
 * open Chrome and go to `chrome://chrome/extensions/`,
@@ -30,11 +30,12 @@ Installation
 * click "Load unpacked extension",
 * select the `extension` folder in this repo.
 
+**Option 2** – Chrome Web Store installation coming soon.
+
 **Some URLs to try it on:**
 
 * http://feeds.delicious.com/v2/json/popular?callback=hello
 * http://gdata.youtube.com/feeds/api/standardfeeds/most_popular?alt=json&v=2
-* http://twitter.com/statuses/public_timeline.json
 
 FAQ
 ---
